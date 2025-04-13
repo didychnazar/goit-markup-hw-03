@@ -33,6 +33,19 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* common */
 
 .container {
@@ -131,6 +144,7 @@ img {
 
 .main-banner {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .banner-container {
@@ -138,8 +152,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 188px 0;
-  max-width: 496px;
+  flex-direction: column;
 }
 
 .main-logo {
@@ -149,6 +162,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
 }
 
 .main-button {
@@ -180,7 +194,7 @@ img {
 
 /* feature */
 
-.feature-container {
+.feature {
   padding: 120px 0px;
 }
 
@@ -189,7 +203,7 @@ img {
 
   align-items: center;
   gap: 24px;
-  width: calc(100% - 72px) / 4;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .feature-item .feature-title {
@@ -209,14 +223,20 @@ img {
   color: #434455;
 }
 
+.team {
+  padding: 120px 0px;
+}
+
 .team-logo {
-  padding-top: 120px 0px;
   margin-bottom: 72px;
+}
+
+.team-title {
+  margin-bottom: 8px;
 }
 
 .team-box {
   padding: 32px 0%;
-  margin-bottom: 8px;
 }
 
 .team-logo,
@@ -228,7 +248,6 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  background-color: #ffffff;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -289,6 +308,11 @@ img {
   margin-bottom: 72px;
 }
 
+.portfolio {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
 .portfolio-list {
   font-weight: 400;
   font-size: 16px;
@@ -297,16 +321,13 @@ img {
   color: #434455;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-
-  padding-bottom: 120px;
+  gap: 48px 24px;
 }
 
 .portfolio-box {
-  padding-top: 32px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  row-gap: 48px;
-  padding: 32px;
+  border-top: none;
 }
 
 .portfolio-title {
@@ -316,6 +337,10 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+}
+
+.page-footer {
+  padding: 100px 0;
 }
 
 .footer-item {
@@ -328,11 +353,7 @@ img {
   padding-right: 756px;
 }
 
-.logo {
-  padding: 100px 0px;
-}
-
 .footer-logo {
-  /* display: inline-block; */
+  display: inline-block;
   margin-bottom: 16px;
 }
