@@ -177,14 +177,14 @@ img {
 
 /* feature */
 
-.feature-container {
+.feature {
   padding: 120px 0px;
 }
 
 .feature-list {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  gap: 24px; */
+  gap: 24px;
   /* width: calc((100% - 72px) / 4); */
 }
 
@@ -203,8 +203,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  width: calc((100% - 72px) / 4);
-  align-items: center;
 }
 
 .team-logo {
@@ -328,10 +326,9 @@ img {
 
 .logo {
   padding: 100px 0px;
-  /* display: inline-block;
-  max-width: 264px; */
 }
 
-.logo-part {
+.footer-logo {
+  /* display: inline-block; */
   margin-bottom: 16px;
 }
