@@ -131,13 +131,12 @@ img {
 
 .main-banner {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .banner-container {
   flex-wrap: wrap;
   align-items: center;
-  padding: 188px 0;
-  max-width: 496px;
 }
 
 .main-logo {
@@ -147,6 +146,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
 }
 
 .main-button {
